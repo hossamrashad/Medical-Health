@@ -961,10 +961,7 @@ header .middle-bar {
   margin-bottom: 15px;
   padding-top: 15px;
 }
-header .hoverZoomLink {
-  height: 100px !important;
-  margin: auto;
-}
+
 header .middle-bar .contact-info p {
   font-size: 14px;
   font-style: italic;
