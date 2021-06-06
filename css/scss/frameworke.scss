@@ -461,4 +461,85 @@ html {
     padding-top: $main-padding + 50;
     padding-bottom: $main-padding + 50;
   }
+
+  // ivs-model
+  .ivs-model {
+    margin-top: $main-margin;
+    padding-top: $main-padding;
+    padding-bottom: $main-padding;
+    h3.h2 {
+      position: relative;
+      width: fit-content;
+      margin: auto auto 60px auto;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -15px;
+        height: 30px;
+        border-right: 5px solid $main-color;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -15px;
+        height: 30px;
+        border-right: 5px solid $main-color;
+      }
+    }
+    .inner {
+      border-top: 3px solid transparent;
+      border-bottom: 3px solid #333;
+      @include transitionAll(all, 0.2s, linear);
+      height: 400px;
+      @include hover{
+      border-bottom: 3px solid transparent;
+      border-top: 3px solid $main-color;
+      }
+    }
+  }
+
+  // vision-mission
+  .vision-mission{
+    margin-top: $main-margin -50;
+    padding-top: $main-padding;
+    padding-bottom: $main-padding;
+    h3.h2 {
+      position: relative;
+      width: fit-content;
+      margin: auto auto 30px auto;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -15px;
+        height: 30px;
+        border-right: 5px solid $main-color;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -15px;
+        height: 30px;
+        border-right: 5px solid $main-color;
+      }
+    }
+    .inner{
+      h4.h3{
+        position: relative;
+        margin-bottom: 30px;
+        margin-top: 50px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -15px;
+          height: 30px;
+          border-right: 5px solid $main-color;
+        }
+      }
+    }
+  }
 }
