@@ -1615,6 +1615,32 @@ html {
   padding-bottom: 150PX;
 }
 
+.wrapper #our-work h3.h2 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto auto 60px auto;
+}
+
+.wrapper #our-work h3.h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -15px;
+  height: 30px;
+  border-right: 5px solid #0B53A5;
+}
+
+.wrapper #our-work h3.h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -15px;
+  height: 30px;
+  border-right: 5px solid #0B53A5;
+}
+
 .wrapper .ivs-model {
   margin-top: 100PX;
   padding-top: 100PX;

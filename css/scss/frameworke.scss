@@ -460,6 +460,27 @@ html {
   #our-work {
     padding-top: $main-padding + 50;
     padding-bottom: $main-padding + 50;
+    h3.h2 {
+      position: relative;
+      width: fit-content;
+      margin: auto auto 60px auto;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -15px;
+        height: 30px;
+        border-right: 5px solid $main-color;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -15px;
+        height: 30px;
+        border-right: 5px solid $main-color;
+      }
+    }
   }
 
   // ivs-model
