@@ -1,7 +1,6 @@
 @import "helper/font";
 @import "helper/color";
 @import "helper/mixin";
-@import "helper/media"; // remove
 
 // global
 body {
@@ -514,14 +513,14 @@ html {
       @include transitionAll(all, 0.2s, linear);
       height: 400px;
       display: inline-block;
-      @include hover{
-      border-top: 3px solid $main-color;
+      @include hover {
+        border-top: 3px solid $main-color;
       }
     }
   }
 
   // vision-mission
-  .vision-mission{
+  .vision-mission {
     margin-top: $main-margin -50;
     padding-top: $main-padding;
     padding-bottom: $main-padding;
@@ -546,8 +545,8 @@ html {
         border-right: 5px solid $main-color;
       }
     }
-    .inner{
-      h4.h3{
+    .inner {
+      h4.h3 {
         position: relative;
         margin-bottom: 30px;
         margin-top: 50px;
@@ -568,18 +567,30 @@ html {
   background-color: $main-color;
   color: #fff;
   display: block;
-  padding: 10px 5px 11px;
+  padding: 3px 5px 11px;
   position: fixed;
   bottom: 10px;
   right: 10px;
   display: none;
   z-index: 900000;
-  height: 66px;
+  height: 55px;
   line-height: 50px;
   text-align: center;
   @include borderRadius(10px);
   border: 2px solid map-get($colors, 9);
   @include hover {
     color: #fff;
+  }
+}
+// ourTeam-social
+.ourTeam-social {
+  // ul
+  .social {
+    li {
+      a {
+        
+      }
+      
+    }
   }
 }

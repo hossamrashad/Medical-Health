@@ -1097,78 +1097,6 @@
   width: 100%;
 }
 
-@media (max-width: 767px) {
-  body::before {
-    content: "xs";
-    position: fixed;
-    bottom: 10px;
-    left: 20px;
-    width: 50px;
-    height: 50px;
-    color: #fff;
-    background-color: #333;
-    font-size: 30px;
-    text-align: center;
-    text-transform: capitalize;
-    border: 2px solid #fafafa;
-    z-index: 2000;
-  }
-}
-
-@media (min-width: 768px) {
-  body::before {
-    content: "sm";
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    width: 50px;
-    height: 50px;
-    color: #fff;
-    background-color: #333;
-    font-size: 30px;
-    text-align: center;
-    text-transform: capitalize;
-    border: 2px solid #fafafa;
-    z-index: 2000;
-  }
-}
-
-@media (min-width: 992px) {
-  body::before {
-    content: "md";
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    width: 50px;
-    height: 50px;
-    color: #fff;
-    background-color: #333;
-    font-size: 30px;
-    text-align: center;
-    text-transform: capitalize;
-    border: 2px solid #fafafa;
-    z-index: 2000;
-  }
-}
-
-@media (min-width: 1200px) {
-  body::before {
-    content: "lg";
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    width: 50px;
-    height: 50px;
-    color: #fff;
-    background-color: #333;
-    font-size: 30px;
-    text-align: center;
-    text-transform: capitalize;
-    border: 2px solid #fafafa;
-    z-index: 2000;
-  }
-}
-
 body {
   font-family: "Cairo", sans-serif;
   font-size: 18px;
@@ -1739,13 +1667,13 @@ html {
   background-color: #0B53A5;
   color: #fff;
   display: block;
-  padding: 10px 5px 11px;
+  padding: 3px 5px 11px;
   position: fixed;
   bottom: 10px;
   right: 10px;
   display: none;
   z-index: 900000;
-  height: 66px;
+  height: 55px;
   line-height: 50px;
   text-align: center;
   border-radius: 10px;
