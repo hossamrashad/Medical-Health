@@ -1734,4 +1734,29 @@ html {
   height: 30px;
   border-right: 5px solid #0B53A5;
 }
+
+#scroll-to-top-1 {
+  background-color: #0B53A5;
+  color: #fff;
+  display: block;
+  padding: 10px 5px 11px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+  z-index: 900000;
+  height: 66px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 2px solid #737373;
+}
+
+#scroll-to-top-1:not([disabled]):hover {
+  color: #fff;
+}
 /*# sourceMappingURL=frameworke.css.map */
