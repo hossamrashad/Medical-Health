@@ -9,17 +9,3 @@
 /*jslint browser: true */
 /*global window */
 
-// $(function () {
-//   "use strict";
-//   // smoothly scroll
-
-//   $(".navbar-nav li a").click(function () {
-//     $("html, body").animate(
-//       {
-//         screenTop: $("#" + $(this).data("scroll")).offset().top
-//       },
-//       1000
-//     );
-//     console.log("#" + $(this).data("scroll"));
-//   });
-// });

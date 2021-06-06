@@ -1649,17 +1649,16 @@ html {
 
 .wrapper .ivs-model .inner {
   border-top: 3px solid transparent;
-  border-bottom: 3px solid #333;
   transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   height: 400px;
+  display: inline-block;
 }
 
 .wrapper .ivs-model .inner:not([disabled]):hover {
-  border-bottom: 3px solid transparent;
   border-top: 3px solid #0B53A5;
 }
 

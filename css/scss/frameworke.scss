@@ -490,11 +490,10 @@ html {
     }
     .inner {
       border-top: 3px solid transparent;
-      border-bottom: 3px solid #333;
       @include transitionAll(all, 0.2s, linear);
       height: 400px;
+      display: inline-block;
       @include hover{
-      border-bottom: 3px solid transparent;
       border-top: 3px solid $main-color;
       }
     }
