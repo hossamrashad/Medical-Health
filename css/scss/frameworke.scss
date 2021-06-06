@@ -1,0 +1,210 @@
+@import "helper/font";
+@import "helper/color";
+@import "helper/mixin";
+@import "helper/media"; // remove
+
+// global
+body {
+  font-family: $cairo-font;
+  font-size: $page-font;
+}
+html {
+  scroll-behavior: smooth;
+}
+.ml-10px {
+  margin-left: 10px;
+}
+
+// Home Page
+.wrapper {
+  // header
+  #header {
+    // top bar
+    .top-bar {
+      background-color: $third-color;
+      font-size: $page-font;
+      @include xs-media {
+        display: none;
+      }
+      p.no-margin {
+        color: $color-fff;
+        strong {
+          a {
+            color: $text-color;
+            padding-left: 10px;
+            i {
+              color: $color-fff;
+              padding-left: 10px;
+            }
+          }
+        }
+        span {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+      // button
+      .language {
+        font-weight: bold;
+        color: $text-color;
+        img {
+          margin-right: 10px;
+          @include sm-md-media {
+            display: none;
+          }
+        }
+      }
+    }
+    .middle-bar {
+      // a
+      .logo {
+        // img
+        .img-logo {
+          height: 50px;
+          width: 50px;
+          @include scale(2, 2);
+          margin-left: 20px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      }
+      .contact-info {
+        p {
+          padding-top: 10px;
+          margin-top: 20px;
+          font-size: $page-font;
+          span {
+            a {
+              color: $main-color;
+            }
+          }
+        }
+      }
+    }
+    .nav-wrap-holder {
+      nav {
+        // border: 3px solid #333;
+        // style xs
+        .navbar-header {
+          .navbar-toggle {
+            margin-right: 0;
+          }
+        }
+        // nav sm md lg
+        .navbar-collapse {
+          // ul
+          .navbar-nav {
+            li {
+              font-size: $page-font;
+              a {
+                i,
+                span {
+                  color: $main-color;
+                  font-size: $page-font;
+                }
+              }
+              @include hover {
+                i,
+                span {
+                  color: $color-fff;
+                }
+              }
+            }
+            // link pages
+            li.dropdown-full {
+              // a pages
+              a.dropdown-toggle {
+                span.icon-i-family-practice {
+                }
+                span.reverse {
+                }
+                span.caret {
+                }
+              }
+              // div pages
+              div.drop-image {
+                // row
+                ul {
+                  li {
+                    ul {
+                      li {
+                        margin: 20px 0px;
+                        a {
+                          font-size: $page-font;
+                          @include hover {
+                            color: $color-fff;
+                            @include borderRadius(5px);
+                          }
+                        }
+                        form {
+                          input {
+                            font-size: $page-font;
+                          }
+                          .btn-fill {
+                            margin-top: 30px;
+                          }
+                        }
+                      }
+                    }
+                    figure {
+                      width: 100%;
+                      height: 320px;
+                      display: inline-block;
+                      overflow: hidden;
+                      img {
+                        @include scale(1.5, 1.5);
+                        background-size: cover;
+                        height: 323px;
+                        margin-top: 50px;
+                      }
+                    }
+                  }
+                }
+              }
+              h4 {
+                strong {
+                  color: $color-fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .nav .open > a,
+  .nav .open > a:hover,
+  .nav .open > a:focus {
+    background-color: $main-color;
+    color: $text-color !important;
+  }
+  // slider
+  .fullsize-container {
+    .fullsize-slider {
+      ul {
+      }
+    }
+    // btn bottom
+    .tp-bullets.preview4 {
+      @include xs-media {
+        display: none;
+      }
+      @include sm-md-media {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  // section service
+  #service {
+    margin-top: $main-margin;
+    padding-top: $main-padding + 50;
+    padding-bottom: $main-padding + 50;
+  }
+
+  // section our-work
+  #our-work {
+    padding-top: $main-padding + 50;
+    padding-bottom: $main-padding + 50;
+  }
+}

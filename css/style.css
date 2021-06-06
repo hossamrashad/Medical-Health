@@ -999,7 +999,7 @@ header .middle-bar .contact-info p span {
   text-transform: uppercase;
   color: #32333f;
 }
-.navbar-default .navbar-nav > .open > a,
+/* .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
   color: #0e0e0f;
@@ -1008,7 +1008,7 @@ header .middle-bar .contact-info p span {
     rgba(255, 255, 255, 0.98) 0,
     rgba(234, 235, 244, 0.84) 100%
   );
-}
+} */
 header .navbar-form {
   width: auto;
   padding-top: 7px;
@@ -2563,3 +2563,5 @@ table td {
   padding: 0px;
   /*replace cellpadding*/
 }
+
+
