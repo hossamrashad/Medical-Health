@@ -1262,6 +1262,7 @@ html {
 .wrapper #header .nav-wrap-holder nav .navbar-collapse .navbar-nav li a span {
   color: #0B53A5;
   font-size: 18px;
+  text-transform: capitalize;
 }
 
 .wrapper #header .nav-wrap-holder nav .navbar-collapse .navbar-nav li:not([disabled]):hover i,
@@ -1316,11 +1317,120 @@ html {
   color: #fff;
 }
 
+.wrapper #header .nav-wrap-holder nav .navbar-collapse .navbar-nav .dropdown-short .dropdown-menu li a {
+  color: #000;
+}
+
+.wrapper #header .nav-wrap-holder nav .navbar-collapse .navbar-nav .dropdown-short .dropdown-menu li a span {
+  color: #0B53A5;
+  padding-top: 15px;
+}
+
+.wrapper #header .nav-wrap-holder nav .navbar-collapse .navbar-nav .dropdown-short .dropdown-menu li a span:focus {
+  color: #fff;
+}
+
+.wrapper #header .nav-wrap-holder nav .navbar-collapse .navbar-nav .dropdown-short .dropdown-menu li a:not([disabled]):hover span {
+  color: #fff;
+}
+
+.wrapper #header .nav-wrap-holder .navbar-right .li-form form {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper #header .nav-wrap-holder .navbar-right .li-form form input {
+  width: 145px !important;
+  font-weight: bold;
+  border: 1px solid #9c9c9c;
+}
+
+.wrapper #header .nav-wrap-holder .navbar-right .li-form form input:not([disabled]):hover {
+  width: 120px !important;
+  border: 1px solid #0B53A5;
+}
+
+.wrapper #header .nav-wrap-holder .navbar-right .li-form form input:not([disabled]):hover span {
+  color: black !important;
+}
+
+.wrapper #header .nav-wrap-holder .navbar-right .li-form form input:not([disabled]):hover span button {
+  color: black !important;
+}
+
+.wrapper #header .nav-wrap-holder .navbar-right .li-form form input:not([disabled]):hover span button i {
+  color: black !important;
+}
+
+.wrapper #header .nav-wrap-holder .navbar-right .li-form form span {
+  color: black !important;
+}
+
+.wrapper #header .nav-wrap-holder .navbar-right .li-form form span button {
+  color: black !important;
+}
+
+.wrapper #header .nav-wrap-holder .navbar-right .li-form form span button i {
+  color: black !important;
+}
+
+.wrapper #header .nav-wrap-holder .navbar-right li.dropdown-full.header-mail ul li address abbr {
+  color: #0B53A5;
+  font-weight: bold;
+}
+
+.wrapper #header .nav-wrap-holder .navbar-right li.dropdown-full.header-mail ul li address a {
+  color: #0B53A5;
+  font-weight: bold;
+}
+
+.wrapper #header .nav-wrap-holder .navbar-right li.dropdown-full.header-mail ul li div.open-hours p span {
+  color: #0B53A5;
+}
+
 .wrapper .nav .open > a,
 .wrapper .nav .open > a:hover,
 .wrapper .nav .open > a:focus {
   background-color: #0B53A5;
-  color: #9c9c9c !important;
+  color: #9c9c9c;
+}
+
+.wrapper .fullsize-container .fullsize-slider ul li div.tp-caption.theme-caption.rs-parallaxlevel-4.transform {
+  margin-left: 50px;
+  margin-bottom: 10px;
+  padding: 30px;
+  font-size: 2em;
+  color: #0B53A5;
+  text-align: center;
+  font-weight: bold;
+  -o-box-shadow: -1px 0px 10px #fff;
+  -ms-box-shadow: -1px 0px 10px #fff;
+  -webkit-box-shadow: -1px 0px 10px #fff;
+          box-shadow: -1px 0px 10px #fff;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrapper .fullsize-container .fullsize-slider ul li div.tp-caption.theme-caption.rs-parallaxlevel-4.transform {
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+
+.wrapper .fullsize-container .fullsize-slider ul li div.tp-caption.theme-caption.rs-parallaxlevel-4.transform.tow {
+  color: #fff;
+}
+
+.wrapper .fullsize-container .fullsize-slider ul li div.tp-caption.theme-caption.rs-parallaxlevel-4.transform.three {
+  color: #000;
+}
+
+.wrapper .fullsize-container .fullsize-slider ul li div.tp-caption.theme-caption.rs-parallaxlevel-4.transform.four {
+  color: #fff;
+}
+
+.wrapper .fullsize-container .fullsize-slider ul li div.tp-caption.sfl.rs-parallaxlevel-4 {
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 @media (max-width: 767px) {
@@ -1337,8 +1447,167 @@ html {
 
 .wrapper #service {
   margin-top: 100PX;
-  padding-top: 150PX;
+  padding-top: 100PX;
   padding-bottom: 150PX;
+}
+
+.wrapper #service h3.h2 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto auto 60px auto;
+}
+
+.wrapper #service h3.h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -15px;
+  height: 30px;
+  border-right: 5px solid #0B53A5;
+}
+
+.wrapper #service h3.h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -15px;
+  height: 30px;
+  border-right: 5px solid #0B53A5;
+}
+
+.wrapper .description-section {
+  margin-top: 100PX;
+  padding-top: 100PX;
+  padding-bottom: 150PX;
+  background-image: url(../../images/back-section/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.wrapper .description-section h3.h2 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto auto 60px auto;
+  color: #fff;
+}
+
+.wrapper .description-section h3.h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -15px;
+  height: 30px;
+  border-right: 5px solid #fff;
+}
+
+.wrapper .description-section h3.h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -15px;
+  height: 30px;
+  border-right: 5px solid #fff;
+}
+
+.wrapper .description-section .css-parent-box-border-fide {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.wrapper .description-section .css-parent-box-border-fide .css-child-box-border-fide {
+  width: 100%;
+  height: 600px;
+  -o-box-shadow: -1px 0px 10px #fff;
+  -ms-box-shadow: -1px 0px 10px #fff;
+  -webkit-box-shadow: -1px 0px 10px #fff;
+          box-shadow: -1px 0px 10px #fff;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.575);
+}
+
+.wrapper .description-section .css-parent-box-border-fide .css-child-box-border-fide .h3 {
+  margin: 0;
+  padding: 20px 0px;
+  font-size: 25px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.wrapper .description-section .css-parent-box-border-fide .css-child-box-border-fide p.lead {
+  font-size: 20px;
+}
+
+.wrapper .description-section .css-parent-box-border-fide .css-child-box-border-fide::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-left: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.wrapper .description-section .css-parent-box-border-fide .css-child-box-border-fide::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 4px;
+  width: 100%;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.wrapper .description-section .css-parent-box-border-fide .css-child-box-border-fide:hover::before {
+  border-color: #fff;
+  height: 100%;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: 0.3s height linear 0.3s, 0.3s -webkit-transform linear;
+  transition: 0.3s height linear 0.3s, 0.3s -webkit-transform linear;
+  transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  transition: 0.3s transform linear, 0.3s height linear 0.3s, 0.3s -webkit-transform linear;
+  -webkit-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  -moz-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  -ms-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  -o-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+}
+
+.wrapper .description-section .css-parent-box-border-fide .css-child-box-border-fide:hover::after {
+  border-color: #fff;
+  height: 100%;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: 0.3s height linear 0.3s, 0.3s -webkit-transform linear;
+  transition: 0.3s height linear 0.3s, 0.3s -webkit-transform linear;
+  transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  transition: 0.3s transform linear, 0.3s height linear 0.3s, 0.3s -webkit-transform linear;
+  -webkit-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  -moz-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  -ms-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  -o-transition: 0.3s transform linear, 0.3s height linear 0.3s;
 }
 
 .wrapper #our-work {

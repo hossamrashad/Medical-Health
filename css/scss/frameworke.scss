@@ -83,7 +83,6 @@ html {
     }
     .nav-wrap-holder {
       nav {
-        // border: 3px solid #333;
         // style xs
         .navbar-header {
           .navbar-toggle {
@@ -101,6 +100,7 @@ html {
                 span {
                   color: $main-color;
                   font-size: $page-font;
+                  text-transform: capitalize;
                 }
               }
               @include hover {
@@ -167,6 +167,100 @@ html {
                 }
               }
             }
+            .dropdown-short {
+              a {
+              }
+              .dropdown-menu {
+                li {
+                  a {
+                    color: $color-000;
+                    span {
+                      color: $main-color;
+                      padding-top: 15px;
+                      &:focus {
+                        color: $color-fff;
+                      }
+                    }
+                    @include hover {
+                      span {
+                        color: $color-fff;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      // nav right
+      .navbar-right {
+        .li-form {
+          // border: 3px solid #333;
+          form {
+            box-sizing: border-box;
+            input {
+              width: 145px !important;
+              font-weight: bold;
+              border: 1px solid $text-color;
+              @include hover {
+                width: 120px !important;
+                border: 1px solid $main-color;
+                span {
+                  color: black !important;
+                  button {
+                    color: black !important;
+                    i {
+                      color: black !important;
+                    }
+                  }
+                }
+              }
+            }
+            span {
+              color: black !important;
+              button {
+                color: black !important;
+                i {
+                  color: black !important;
+                }
+              }
+            }
+          }
+        }
+        .dropdown-grid {
+        }
+        li.dropdown-full.header-mail {
+          a {
+            i {
+            }
+            span {
+            }
+          }
+          ul {
+            li {
+              address {
+                strong {
+                }
+                abbr {
+                  color: $main-color;
+                  font-weight: bold;
+                }
+              }
+              address {
+                a {
+                  color: $main-color;
+                  font-weight: bold;
+                }
+              }
+              div.open-hours {
+                p {
+                  span {
+                    color: $main-color;
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -176,12 +270,45 @@ html {
   .nav .open > a:hover,
   .nav .open > a:focus {
     background-color: $main-color;
-    color: $text-color !important;
+    color: $text-color;
   }
   // slider
   .fullsize-container {
     .fullsize-slider {
       ul {
+        li {
+          img {
+          }
+          div.tp-caption.theme-caption.rs-parallaxlevel-4.transform {
+            margin-left: 50px;
+            margin-bottom: 10px;
+            padding: 30px;
+            font-size: 2em;
+            color: $main-color;
+            text-align: center;
+            font-weight: bold;
+            @include boxShadow(-1px, 0px, 10px, #fff);
+            @include sm-md-media {
+              font-size: 1em;
+              font-weight: bold;
+            }
+          }
+          div.tp-caption.theme-caption.rs-parallaxlevel-4.transform.tow {
+            color: #fff;
+          }
+          div.tp-caption.theme-caption.rs-parallaxlevel-4.transform.three {
+            color: #000;
+          }
+          div.tp-caption.theme-caption.rs-parallaxlevel-4.transform.four {
+            color: #fff;
+          }
+          div.tp-caption.sfl.rs-parallaxlevel-4 {
+            margin-top: 50px;
+            margin-left: 50px;
+            a {
+            }
+          }
+        }
       }
     }
     // btn bottom
@@ -198,8 +325,135 @@ html {
   // section service
   #service {
     margin-top: $main-margin;
-    padding-top: $main-padding + 50;
+    padding-top: $main-padding;
     padding-bottom: $main-padding + 50;
+    h3.h2 {
+      position: relative;
+      width: fit-content;
+      margin: auto auto 60px auto;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -15px;
+        height: 30px;
+        border-right: 5px solid $main-color;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -15px;
+        height: 30px;
+        border-right: 5px solid $main-color;
+      }
+    }
+  }
+
+  // description
+  .description-section {
+    margin-top: $main-margin;
+    padding-top: $main-padding;
+    padding-bottom: $main-padding + 50;
+    background-image: url(../../images/back-section/1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    h3.h2 {
+      position: relative;
+      width: fit-content;
+      margin: auto auto 60px auto;
+      color: $color-fff;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -15px;
+        height: 30px;
+        border-right: 5px solid $color-fff;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -15px;
+        height: 30px;
+        border-right: 5px solid $color-fff;
+      }
+    }
+    .css-parent-box-border-fide {
+      width: 100%;
+      margin-top: 30px;
+      .css-child-box-border-fide {
+        width: 100%;
+        height: 600px;
+        @include boxShadow(-1px, 0px, 10px, #fff);
+        position: relative;
+        display: block;
+        overflow: hidden;
+        padding: 15px;
+        text-align: center;
+        margin: 0;
+        font-weight: bold;
+        color: $color-fff;
+        background-color: rgba(0, 0, 0, 0.575);
+        .h3 {
+          margin: 0;
+          padding: 20px 0px;
+          font-size: $font-sm + 5;
+          text-transform: capitalize;
+          color: #fff;
+        }
+        p.lead {
+          font-size: $page-font + 2;
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          left: 0;
+          bottom: 0;
+          height: 4px;
+          width: 100%;
+          border-left: 4px solid transparent;
+          border-bottom: 4px solid transparent;
+          box-sizing: border-box;
+          @include prefix(transform, translateX(100%), webkit moz o ms);
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          left: 0;
+          top: 0;
+          height: 4px;
+          width: 100%;
+          border-top: 4px solid transparent;
+          border-right: 4px solid transparent;
+          box-sizing: border-box;
+          @include prefix(transform, translateX(-100%), webkit moz o ms);
+        }
+        &:hover::before {
+          border-color: #fff;
+          height: 100%;
+          @include prefix(transform, translateX(0), webkit moz o ms);
+          transition: 0.3s transform linear, 0.3s height linear 0.3s;
+          -webkit-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+          -moz-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+          -ms-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+          -o-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+        }
+        &:hover::after {
+          border-color: #fff;
+          height: 100%;
+          @include prefix(transform, translateX(0), webkit moz o ms);
+          transition: 0.3s transform linear, 0.3s height linear 0.3s;
+          -webkit-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+          -moz-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+          -ms-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+          -o-transition: 0.3s transform linear, 0.3s height linear 0.3s;
+        }
+      }
+    }
   }
 
   // section our-work
