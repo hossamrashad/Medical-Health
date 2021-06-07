@@ -200,6 +200,7 @@ html {
             box-sizing: border-box;
             input {
               width: 120px !important;
+              @include lg-media{display:none}
               font-weight: bold;
               border: 1px solid $text-color;
               @include hover {
