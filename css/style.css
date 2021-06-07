@@ -1382,7 +1382,7 @@ ul.bullet-list li {
 .footer-4cln-bar span.address {
   font-size: 14px;
   line-height: 15px;
-  float: right;
+  float: left;
   width: 200px;
   text-align: right;
   color: #959ca3;

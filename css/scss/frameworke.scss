@@ -521,8 +521,7 @@ html {
 
   // vision-mission
   .vision-mission {
-    margin-top: $main-margin -50;
-    padding-top: $main-padding;
+    padding-top: 0;
     padding-bottom: $main-padding;
     h3.h2 {
       position: relative;
@@ -582,15 +581,588 @@ html {
     color: #fff;
   }
 }
-// ourTeam-social
-.ourTeam-social {
-  // ul
-  .social {
-    li {
-      a {
-        
+// btn-social - translateY
+.parent-social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // div
+  .child-social {
+    width: 230px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 2px solid $main-color;
+    overflow: hidden;
+    @include borderRadius(5px);
+
+    //
+    .button {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      background-color: $main-color;
+      @include borderRadius(5px);
+      font-size: 1.3em;
+      font-family: cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      @include transitionAll(all, 0.5s, linear);
+      color: $color-fff;
+      cursor: pointer;
+    }
+
+    &:hover > .button {
+      @include translateY(120%);
+    }
+    &:hover > a {
+      // top: 10px;
+      @include translateY(90%);
+    }
+    a {
+      cursor: pointer;
+      position: absolute;
+      @include borderRadius(50%);
+      color: $color-fff;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 12px;
+      // facebook
+      &:nth-child(2) {
+        top: -35px;
+        left: 0px;
+        background-color: #3b5998;
+        @include transitionAll(all, 0.3s, linear);
+        transition-delay: 0.1s;
+        padding: 10px;
+        text-align: center;
+        &:hover {
+          color: #3b5998;
+          background-color: #fff;
+          @include boxShadow(-1px, 0px, 10px, #3b5998);
+        }
       }
-      
+      // twitter
+      &:nth-child(3) {
+        top: -35px;
+        left: 60px;
+        background-color: #1da1f2;
+        @include transitionAll(all, 0.3s, linear);
+        transition-delay: 0.2s;
+        &:hover {
+          color: #1da1f2;
+          background-color: #fff;
+          @include boxShadow(-1px, 0px, 10px, #1da1f2);
+        }
+      }
+      // google
+      &:nth-child(4) {
+        top: -35px;
+        right: 57px;
+        @include transitionAll(all, 0.3s, linear);
+        transition-delay: 0.3s;
+        background-color: #4285f4;
+        &:hover {
+          color: #4285f4;
+          background-color: #fff;
+          @include boxShadow(-1px, 0px, 10px, #4285f4);
+        }
+      }
+      // linkedin
+      &:nth-child(5) {
+        top: -35px;
+        right: 0px;
+        @include transitionAll(all, 0.3s, linear);
+        transition-delay: 0.4s;
+        background-color: #caccce;
+        &:hover {
+          color: #caccce;
+          background-color: #fff;
+          @include boxShadow(-1px, 0px, 10px, #caccce);
+        }
+      }
+    }
+  }
+}
+.copyright {
+  margin: 0px;
+  padding: 30px 0px;
+  background-color: #161719;
+  color: map-get($colors, fff);
+  text-align: center;
+  font-family: $font-en-1;
+  .lead,
+  .link {
+    display: inline-block;
+  }
+  .link {
+    margin-right: 20px;
+    a {
+      text-decoration: none;
+      color: map-get($colors, 3498db);
+      font-size: 20px;
+      font-weight: bolder;
+      > div {
+        display: inline-block;
+      }
+      .css-parent-text-shadow-15-5 {
+        display: inline-block;
+        background: rgb(173, 173, 173);
+        padding: 5px 10px;
+        @include borderRadius(5px);
+        h4 {
+          text-align: center;
+          color: #fff;
+          font-weight: bold;
+          text-transform: uppercase;
+          @include transition(0.5s);
+          &:hover {
+            text-shadow: -1px -1px 1px #333, 0 1px 0 #333, 0 2px 0 #333,
+              0 2px 0 #333, 0 3px 0 #333, 0 4px 0 #333, 0 5px 0 #333,
+              0 6px 0 #333, 0 7px 0 #333, 0 8px 0 #333, 0 9px 0 #333,
+              0 10px 0 #333, 0 11px 0 #333, 0 12px 0 #333, 0 13px 0 #333,
+              0 14px 0 #333, 0 15px 0 #333, 10px 25px 35px rgba(0, 0, 0, 0);
+          }
+        }
+      }
+    }
+  }
+}
+
+// parent-box-icon-have-back-text
+.parent-box-icon-have-back-text {
+  position: relative;
+  // overflow: hidden;
+  .card {
+    position: relative;
+    cursor: pointer;
+    &:hover .face.face1 {
+      background-color: $main-color;
+      @include translateY(0);
+      min-height: 100px;
+    }
+    &:hover .face.face2 {
+      @include translateY(0);
+    }
+    &:hover .face.face1 .content {
+      opacity: 1;
+    }
+    .face {
+      width: 100%;
+      min-height: 400px;
+      @include transitionAll(all, 0.5s, linear);
+      overflow: hidden;
+    }
+    .face.face1 {
+      position: relative;
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      @include translateY(200px);
+      .content {
+        text-align: center;
+        opacity: 0.2;
+        @include transitionTime(0.5s);
+        img {
+          max-width: 100px;
+        }
+        h3 {
+          margin: 10px 0 0;
+          padding: 0;
+          color: #fff;
+          text-align: center;
+          font-size: 1.5em;
+        }
+      }
+    }
+    .face.face2 {
+      position: relative;
+      color: $main-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+      @include boxShadow(0, 20px, 50px, #000);
+      @include translateY(-200px);
+      height: 400px;
+    }
+  }
+}
+
+.basic-components {
+  h3.h2.text-center {
+    position: relative;
+    width: fit-content;
+    margin: auto auto 30px auto;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -15px;
+      height: 30px;
+      border-right: 5px solid $main-color;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -15px;
+      height: 30px;
+      border-right: 5px solid $main-color;
+    }
+  }
+  h4.h3 {
+    position: relative;
+    width: fit-content;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -15px;
+      height: 30px;
+      border-right: 5px solid $main-color;
+    }
+  }
+  .inner-disc {
+    ul {
+      li {
+        padding-top: 30px;
+        line-height: 1.8;
+      }
+    }
+    p.lead.text-center {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  }
+}
+
+// parent-dynamic-tabs
+
+.parent-dynamic-tabs {
+  margin-top: $main-margin;
+  .dynamic-tabs {
+    ul.tabs-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        position: relative;
+        padding: 15px 30px;
+        background-color: $main-color;
+        top: 1px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        border-top: 3px solid transparent;
+        font-weight: bold;
+        color: #fff;
+        @include transitionAll(all, 0.5s, linear);
+        &:hover {
+          color: $text-color;
+        }
+      }
+      li.active {
+        color: $text-color;
+        border-bottom: 1px solid $main-color;
+        border-top: 3px solid $text-color;
+        z-index: 2;
+      }
+    }
+    .content-list {
+      background-color: $main-color;
+      border: 1px solid #ccc;
+      position: relative;
+      color: #fff !important;
+      padding-bottom: 50px;
+      & > div {
+        padding: 20px;
+        min-height: 300px;
+      }
+      & > div:not(:first-child) {
+        display: none;
+      }
+      .content-one {
+        h3.h2 {
+          color: #fff;
+        }
+        p.lead {
+          font-size: $page-font + 2;
+        }
+      }
+      .content-tow {
+        h3.h2 {
+          color: #fff;
+          margin-bottom: 20px;
+        }
+        p.lead {
+          font-size: $page-font + 2;
+        }
+        .parent-grid-3 {
+          display: grid;
+          gap: 20px 10px;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+          @include xs-media {
+            grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+          }
+          .child-grid {
+            border: 1px solid #fff;
+            height: 100%;
+            padding: 30px 15px;
+            @include boxShadow(-1px, 0px, 5px, #fff);
+          }
+        }
+      }
+    }
+  }
+}
+
+.assistance {
+  margin-bottom: $main-margin;
+  padding-bottom: $main-padding;
+  .inner-disc {
+    height: 300px;
+    background-color: #333;
+    color: $color-fff;
+    font-weight: bold;
+    padding: 30px 20px;
+    @include borderRadius(10px);
+    @include transitionAll(all, 0.5s, linear);
+    border: 2px solid transparent;
+    border-left: 5px solid $main-color;
+
+    //
+    h4.h3 {
+      position: relative;
+      margin-bottom: 30px;
+      margin-top: 50px;
+      @include transitionAll(all, 0.5s, linear);
+      font-weight: bold;
+      color: $text-color;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -15px;
+        height: 30px;
+        border-right: 5px solid $main-color;
+        @include transitionAll(all, 0.5s, linear);
+      }
+    }
+    p.disc {
+      font-size: $page-font + 2;
+      font-weight: bold;
+    }
+    @include hover {
+      background-color: $main-color;
+      color: #fff;
+      border: 2px solid $color-000;
+      border-left: 5px solid $color-000;
+      h4.h3 {
+        color: #fff;
+        &::before {
+          border-right: 5px solid $color-fff;
+        }
+      }
+    }
+  }
+}
+
+// back face
+// css-parent-team-back-to-face
+.back-face {
+  .css-parent-team-back-to-face {
+    .single-team {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      background: transparent;
+      .img-area {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        transform-origin: left;
+        @include transition(1s);
+        perspective: 1000px;
+        @include rotateY(0deg);
+        img {
+          width: 100%;
+          height: 100%;
+          @include borderRadius(25px);
+        }
+        .img-disc {
+          @include positionCenter;
+          color: #fff;
+          font-weight: bold;
+          padding: 20px;
+          @include borderRadius(5px);
+          background-color: #000000ad;
+          border: 1px solid #fff;
+          //
+          .h3 {
+            color: #fff;
+          }
+          p.lead {
+            font-size: $font-page + 2;
+          }
+          ul {
+            padding: 7px;
+            li {
+              color: #fff;
+              line-height: 1.5;
+            }
+          }
+        }
+      }
+      .img-text {
+        position: absolute;
+        padding: 25px;
+        width: 100%;
+        height: 250px;
+        transform-origin: left;
+        @include rotateY(90deg);
+        box-sizing: border-box;
+        @include transition(1s);
+        ul {
+          li {
+            line-height: 2.9;
+          }
+        }
+      }
+      &:hover .img-area {
+        perspective: 600px;
+        @include rotateY(-90deg);
+      }
+      &:hover .img-text {
+        @include rotateY(0deg);
+        perspective: 600px;
+      }
+    }
+  }
+}
+// competitive
+.competitive {
+  margin-top: $main-color;
+  padding-top: $main-padding;
+  h3.h2.text-center {
+    position: relative;
+    width: fit-content;
+    margin: auto auto 30px auto;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -15px;
+      height: 30px;
+      border-right: 5px solid $main-color;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -15px;
+      height: 30px;
+      border-right: 5px solid $main-color;
+    }
+  }
+  p.lead {
+    line-height: 1.6;
+    font-size: $page-font;
+
+    strong {
+      color: $main-color;
+    }
+  }
+  .parent-grid {
+    display: grid;
+    gap: 20px 10px;
+    grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+    @include xs-media {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+    ul {
+      li {
+        line-height: 1.8;
+      }
+    }
+  }
+}
+
+// popup
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.575);
+  display: none;
+  .inner {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    @include positionCenter;
+    position: fixed;
+    @include borderRadius(5px);
+    h3.h3 {
+      color: #777;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      position: relative;
+      width: fit-content;
+      margin: auto auto 30px auto;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -15px;
+        height: 100%;
+        border-right: 5px solid $main-color;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -15px;
+        height: 100%;
+        border-right: 5px solid $main-color;
+      }
+    }
+    p.lead {
+    }
+    i {
+      @include transitionAll(all, 0.2s, linear);
+      cursor: pointer;
+      @include borderRadius(10%);
+      padding: 10px;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+      line-height: 30px;
+      position: absolute;
+      right: 10px;bottom: 10px;
+      @include hover {
+        @include rotate(90deg);
+        color: $main-color;
+      }
     }
   }
 }
