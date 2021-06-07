@@ -1146,7 +1146,7 @@ html {
     border: 1px solid #ccc;
     padding: 20px;
     width: 400px;
-    height: 400px;
+    height: fit-content;
     @include positionCenter;
     position: fixed;
     @include borderRadius(5px);
