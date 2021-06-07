@@ -1268,7 +1268,7 @@ html {
 }
 
 .wrapper #header .nav-wrap-holder .navbar-right .li-form form input {
-  width: 145px !important;
+  width: 120px !important;
   font-weight: bold;
   border: 1px solid #9c9c9c;
 }
@@ -2445,6 +2445,53 @@ html {
   line-height: 1.8;
 }
 
+.parent-btn-popup {
+  margin-top: 50px;
+  background-color: #9c9c9c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parent-btn-popup .show-popup {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 10px;
+  background-color: #0B53A5;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+
+.parent-btn-popup .show-popup:not([disabled]):hover {
+  background-color: #fff;
+  color: #0B53A5;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
 .popup {
   position: fixed;
   top: 0;
@@ -2538,5 +2585,26 @@ html {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   color: #0B53A5;
+}
+
+.parent-grid-1-item {
+  padding-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  gap: 20px 10px;
+  -ms-grid-columns: (minmax(100%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+}
+
+.parent-grid-1-item .child-grid {
+  width: 100%;
+}
+
+.parent-grid-1-item .child-grid .inner-img {
+  width: 100%;
+}
+
+.parent-grid-1-item .child-grid .inner-img img {
+  width: 100%;
 }
 /*# sourceMappingURL=frameworke.css.map */
