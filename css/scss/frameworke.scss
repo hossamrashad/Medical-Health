@@ -601,6 +601,7 @@ html {
     border: 2px solid $main-color;
     overflow: hidden;
     @include borderRadius(5px);
+    @include transitionAll(all, 0.5s, linear);
 
     //
     .button {
@@ -620,9 +621,12 @@ html {
       color: $color-fff;
       cursor: pointer;
     }
-
+    &:hover  {
+    border: 2px solid transparent;
+    }
     &:hover > .button {
       @include translateY(120%);
+    border: 2px solid transparent;
     }
     &:hover > a {
       // top: 10px;
